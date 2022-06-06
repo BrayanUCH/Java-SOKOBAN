@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sokoban.FinalizaciónDelJuegoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="595.0" stroke="BLACK" strokeType="INSIDE" width="723.0" />
+      <ImageView fitHeight="134.0" fitWidth="545.0" layoutX="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/SOKOBAN.png" />
+         </image>
+      </ImageView>
+      <TextFlow layoutX="77.0" layoutY="144.0" prefHeight="111.0" prefWidth="569.0" textAlignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="FELICIDADES HA TERMINADO EL JUEGO CON EXITO" textAlignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <Button fx:id="volverMenu" layoutX="20.0" layoutY="535.0" mnemonicParsing="false" onAction="#volverMenu" text="VOLVAR AL MENU" />
+      <Button fx:id="terminar" layoutX="559.0" layoutY="535.0" mnemonicParsing="false" onAction="#terminar" text="TERMINAR " />
+      <TextFlow layoutX="198.0" layoutY="499.0" prefHeight="96.0" prefWidth="326.0" textAlignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="GRACIAS POR JUGAR MI JUEGO " textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TableView fx:id="tableview" layoutX="16.0" layoutY="262.0" prefHeight="200.0" prefWidth="691.0">
+        <columns>
+          <TableColumn fx:id="ColumnaPuestos" minWidth="0.0" prefWidth="126.0" text="Puestos" />
+          <TableColumn fx:id="ColumnaNombres" minWidth="0.0" prefWidth="336.0" text="Nombre" />
+            <TableColumn fx:id="ColumnaPuntos" prefWidth="217.0" text="Puntos" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

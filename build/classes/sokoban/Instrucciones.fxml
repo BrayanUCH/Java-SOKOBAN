@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sokoban.InstruccionesController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="658.0" layoutX="-6.0" layoutY="-5.0" stroke="#1eff00" strokeType="INSIDE" width="844.0" />
+      <Text layoutX="64.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TextFlow layoutX="5.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="319.0" prefWidth="816.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="537.0" text="                                    Reglas:                   ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.44285714285714284" startY="1.0">
+                     <stops>
+                        <Stop color="#0700ff" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label text="El jugador puede moverse sobre casillas vacías u objetivos." textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="El jugador puede empujar cajas, pero no tirar de ellas." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="El jugador sólo puede moverse en horizontal y vertical, no en diagonal." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="El jugador no puede pasar sobre las cajas ni situarse sobre ellas." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="44.0" text="Las paredes no pueden ser atravesadas ni por el jugador ni por cajas." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Las cajas pueden encontrarse sobre casillas vacías u objetivos." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="El jugador no puede empujar más de una caja a la vez. " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="El jugador puede deshacer únicamente 3 movimientos por nivel. " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="751.0" text="El jugador podrá deshacer los 3 movimientos después de haber hecho más de 5 movimientos." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="824.0" text="En el juego hay 2 huevos de pascua, si los encuentra gana 25 puntos menos en los pasos por cada uno." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Si una caja esta en DEADLOCK debe deshacer un paso para poder terminar el juego sino cuando se acaben los movimientos de deshacer el juego va a realizar un reinicio automatico del nivel.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="15.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextFlow>
+      <TextFlow layoutX="42.0" layoutY="388.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="143.0" prefWidth="751.0">
+         <children>
+            <Label text="                              Controles:                                                 ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.780952380952381" endY="0.09523809523809523" startY="1.0">
+                     <stops>
+                        <Stop color="#0700ff" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label text="                                 W__(Arriba)                      |                              ^__(Arriba)                               " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="          A__(Izquierda)                 " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="470.0" text=" D__(Derecha)  |     &lt;__(Izquierda)                  &gt;__(Derecha). " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="                                 S__(Abajo)                        |                              v__(Abajo)                  " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="752.0" text="                                                      Z__Para deshacer pasos." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="752.0" text="                                                      R__Para reinicar el nivel." textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </TextFlow>
+      <Button fx:id="BtnRegresar" layoutX="377.0" layoutY="614.0" mnemonicParsing="false" onAction="#Regresar" text="REGRESAR" />
+      <ImageView fx:id="imgSokoban" fitHeight="86.0" fitWidth="199.0" layoutX="490.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/SOKOBAN.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

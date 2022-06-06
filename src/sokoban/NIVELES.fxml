@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sokoban.NIVELESController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="408.0" layoutY="-1.0" stroke="RED" strokeType="INSIDE" width="498.0" />
+      <ImageView fx:id="imgSOKOBAN" fitHeight="136.0" fitWidth="408.0" layoutX="43.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/SOKOBAN.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Nivel1" layoutX="44.0" layoutY="159.0" mnemonicParsing="false" onAction="#Nivel1" text="NIVEL 1" />
+      <Button fx:id="Nivel2" layoutX="102.0" layoutY="184.0" mnemonicParsing="false" onAction="#Nivel2" text="NIVEL 2" />
+      <Button fx:id="Nivel3" layoutX="160.0" layoutY="209.0" mnemonicParsing="false" onAction="#Nivel3" text="NIVEL 3" />
+      <Button fx:id="Nivel4" layoutX="218.0" layoutY="234.0" mnemonicParsing="false" onAction="#Nivel4" text="NIVEL 4" />
+      <Button fx:id="Nivel6" layoutX="335.0" layoutY="284.0" mnemonicParsing="false" onAction="#Nivel6" text="NIVEL 6" />
+      <Button fx:id="Nivel5" layoutX="274.0" layoutY="259.0" mnemonicParsing="false" onAction="#Nivel5" text="NIVEL  5" />
+      <Button fx:id="Nivel7" layoutX="393.0" layoutY="309.0" mnemonicParsing="false" onAction="#Nivel7" text="NIVEL 7" />
+      <Button fx:id="BtnRegresar" layoutX="43.0" layoutY="309.0" mnemonicParsing="false" onAction="#Regresar" text="REGRESAR" />
+   </children>
+</AnchorPane>

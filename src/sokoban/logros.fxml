@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="355.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sokoban.LogrosController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="363.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <ImageView fitHeight="174.0" fitWidth="285.0" layoutX="158.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/SOKOBAN.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="4.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Este juego cuenta con una serie de logros en sus 7 niveles los cuales  brindan puntos extra estos logros son:" textAlignment="CENTER" wrappingWidth="591.9609375">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pasar los niveles en pasos record (5 puntos).">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Encontrar los huevos de pascua (25 puntos).">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuevo record (10 puntos).">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Button fx:id="btnRegresar" layoutX="269.0" layoutY="325.0" mnemonicParsing="false" onAction="#REGRESAR" text="Regresar" />
+   </children>
+</AnchorPane>

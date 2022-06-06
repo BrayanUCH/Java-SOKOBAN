@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="368.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sokoban.Instruciones1Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="457.0" stroke="BLACK" strokeType="INSIDE" width="576.0" />
+      <ImageView fitHeight="59.0" fitWidth="42.0" layoutX="116.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/bloques.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="330.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/caja%20en%20el%20objetivo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="78.0" layoutX="330.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/caja.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="60.0" layoutX="329.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/META.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="115.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/Personaje%20D.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="116.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/POW.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="336.0" fitWidth="271.0" layoutX="153.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/SOKOBAN.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="166.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personaje">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="166.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Huevo de pascua">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="166.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Muro">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="392.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caja">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="392.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caja cuando esta en la meta">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="392.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meta">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="next" layoutX="256.0" layoutY="418.0" mnemonicParsing="false" onAction="#NEXT" text="Siguiente" />
+      <ImageView fitHeight="42.0" fitWidth="78.0" layoutX="116.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/caja%20en%20deadlock.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="166.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caja en deadlock">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

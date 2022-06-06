@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="331.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sokoban.InicioController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="522.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="854.0" />
+      <ImageView fitHeight="515.0" fitWidth="522.0" layoutX="171.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/fondo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="601.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="El Sokoban es un popular juego de lógica que consiste en un tablero con distintos tipos de casillas. El jugador debe recorrer el tablero moviendo distintas cajas o piedras hasta unas zonas especialmente diseñadas para este fin. El juego termina cuando todas las cajas están colocadas sobre los objetivos." textAlignment="CENTER" wrappingWidth="248.9921875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sokoban, que significa “Guardián del Almacén” en japonés, es un juego creado porHiroyuki Imabayashi en 1981 y publicado por su compañía, Thinking Rabbit en unpack de 20 niveles lanzado para NEC PC-8801 en el año 1982. " textAlignment="CENTER" wrappingWidth="235.52734375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="next" layoutX="396.0" layoutY="474.0" mnemonicParsing="false" onAction="#Next" text="Siguiente" />
+      <Text fill="WHITE" layoutX="71.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="El objetivo principal del juego es pasar los niveles en la menos cantidad de pasos posibles." textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
